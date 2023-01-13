@@ -1,4 +1,4 @@
-package com.hbo1.annotaion;
+package com.hb01.annotaion;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -54,8 +54,6 @@ public class RunnerSave01 {
        tx.commit();
        session.close();
        sf.close();
-
-
 
 
     }

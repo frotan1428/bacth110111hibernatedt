@@ -1,25 +1,26 @@
-package com.hbo1.annotaion;
-
+package com.hb01.ontoone;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity // convert a java class to DB table  student01
-@Table(name = "t_student01")
-public class Student01 {
 
+///@getter
+//@setter
+//@Constructor
+//@NoArgConstructor
 
-    @Id  // specifies the primary key on th table
+@Entity
+
+@Table(name = "t_student03")
+public class Student03 {
+
+    @Id
     private int id;
-
-    @Column(name = "std_name",length = 100)
+    @Column(name = "std_name" ,length = 50,nullable = false,unique = true)
     private String name;
-    @Column(name = "std_garde")
     private int grade;
-    // generate getter/setter
-
 
     public int getId() {
         return id;
@@ -45,12 +46,11 @@ public class Student01 {
         this.grade = grade;
     }
 
-    // toString method
 
 
     @Override
     public String toString() {
-        return "Student01{" +
+        return "Student03{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", grade=" + grade +

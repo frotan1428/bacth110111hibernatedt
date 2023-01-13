@@ -32,11 +32,19 @@
             validate: it will validate schema none:
             it doesn't make anything -->
 
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <property name="show_sql">true</property>
 
         <property name="format_sql">true</property>
+
+        <mapping class="com.hb01.ontoone.Student03"></mapping>
+        <mapping class="com.hb01.ontoone.Diary"></mapping>
+
+<!--        <mapping class="com.hb01.annotaion.Student01"></mapping>-->
+<!--        <mapping class="com.hb01.embeded.Student02"></mapping>-->
+
+
 
 
 
